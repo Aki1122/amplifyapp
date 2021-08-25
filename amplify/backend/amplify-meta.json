@@ -1,0 +1,54 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-src-dev-73708-authRole",
+      "UnauthRoleArn": "arn:aws:iam::672326917775:role/amplify-src-dev-73708-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::672326917775:role/amplify-src-dev-73708-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-src-dev-73708-deployment",
+      "UnauthRoleName": "amplify-src-dev-73708-unauthRole",
+      "StackName": "amplify-src-dev-73708",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:672326917775:stack/amplify-src-dev-73708/167d3e10-04ae-11ec-a9e0-06aabd025379",
+      "AmplifyAppId": "d1qh4bycimaaeh"
+    }
+  },
+  "auth": {
+    "srcfaea4f97": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanism": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/auth/srcfaea4f97-cloudformation-template.yml",
+        "logicalId": "authsrcfaea4f97"
+      },
+      "lastPushTimeStamp": "2021-08-25T02:14:44.987Z",
+      "output": {
+        "UserPoolId": "ap-northeast-1_LzQrmmmLy",
+        "AppClientIDWeb": "6j7s8u8qat7gcntpnout0ee0kc",
+        "AppClientID": "7ao96a92r8gn4fbv83rt8fl4ai",
+        "IdentityPoolId": "ap-northeast-1:3693c4eb-64c7-4b8b-a16f-790258118cd1",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:672326917775:userpool/ap-northeast-1_LzQrmmmLy",
+        "IdentityPoolName": "srcfaea4f97_identitypool_faea4f97__dev",
+        "UserPoolName": "srcfaea4f97_userpool_faea4f97"
+      },
+      "lastPushDirHash": "2ZKYdDV2tG8xoui8pp3h5bHzo8o="
+    }
+  }
+}
