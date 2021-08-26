@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "notesap",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-src-dev-73708-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/17e1a28a1e05a477cce27eeb4992cab7cabef4ef"
+}

@@ -128,6 +128,55 @@
         }
       }
     },
+    "apinotesap": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "CreateAPIKey": 1,
+          "AppSyncApiName": "notesap",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "S3DeploymentBucket": "amplify-src-dev-73708-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/17e1a28a1e05a477cce27eeb4992cab7cabef4ef",
+          "env": "dev"
+        }
+      }
+    },
+    "storageimagestorage": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "Parameters": {
+          "bucketName": "srce3619d83f56446e9adb6fc3c9a85a7b0",
+          "authPolicyName": "s3_amplify_daabcef9",
+          "unauthPolicyName": "s3_amplify_daabcef9",
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "selectedGuestPermissions": "s3:GetObject,s3:ListBucket",
+          "selectedAuthenticatedPermissions": "s3:DeleteObject",
+          "s3PermissionsAuthenticatedPublic": "s3:DeleteObject",
+          "s3PublicPolicy": "Public_policy_cda13288",
+          "s3PermissionsAuthenticatedUploads": "DISALLOW",
+          "s3UploadsPolicy": "Uploads_policy_cda13288",
+          "s3PermissionsAuthenticatedProtected": "s3:DeleteObject",
+          "s3ProtectedPolicy": "Protected_policy_cda13288",
+          "s3PermissionsAuthenticatedPrivate": "s3:DeleteObject",
+          "s3PrivatePolicy": "Private_policy_cda13288",
+          "AuthenticatedAllowList": "DISALLOW",
+          "s3ReadPolicy": "read_policy_cda13288",
+          "s3PermissionsGuestPublic": "DISALLOW",
+          "s3PermissionsGuestUploads": "DISALLOW",
+          "GuestAllowList": "DISALLOW",
+          "triggerFunction": "NONE",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",

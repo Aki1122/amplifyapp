@@ -1,0 +1,13 @@
+type Note @model {
+  id: ID!
+  kinds : String
+  name: String!
+  university : String
+  favorite : String
+  lecture : String
+  develope : String
+  environment : String
+  interested : String
+  review : String
+  impression : String
+}

@@ -38,7 +38,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/auth/srcfaea4f97-cloudformation-template.yml",
         "logicalId": "authsrcfaea4f97"
       },
-      "lastPushTimeStamp": "2021-08-25T02:14:44.987Z",
+      "lastPushTimeStamp": "2021-08-26T07:20:27.909Z",
       "output": {
         "UserPoolId": "ap-northeast-1_LzQrmmmLy",
         "AppClientIDWeb": "6j7s8u8qat7gcntpnout0ee0kc",
@@ -49,6 +49,49 @@
         "UserPoolName": "srcfaea4f97_userpool_faea4f97"
       },
       "lastPushDirHash": "2ZKYdDV2tG8xoui8pp3h5bHzo8o="
+    }
+  },
+  "api": {
+    "notesap": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "wncpocfmujeyliysokro27kode",
+        "GraphQLAPIEndpointOutput": "https://3zmkwoi4kndwzjs4jcftega3ni.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-afhdjlubnzclfm7pat7m4xvjii"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apinotesap"
+      },
+      "lastPushTimeStamp": "2021-08-26T07:20:29.503Z",
+      "lastPushDirHash": "kK2tecP1AeSlddr0P6OF7Q+UhTU="
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-src-dev-73708-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimagestorage"
+      },
+      "lastPushTimeStamp": "2021-08-26T07:20:27.941Z",
+      "output": {
+        "BucketName": "srce3619d83f56446e9adb6fc3c9a85a7b073708-dev",
+        "Region": "ap-northeast-1"
+      },
+      "lastPushDirHash": "qx0YWzeZgdW0Cu3BnEf5d4sFYCA="
     }
   }
 }
